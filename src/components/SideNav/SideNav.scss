@@ -1,0 +1,102 @@
+.SideNav{
+    width: 240px;
+    height: 100%;
+    background: #1a1a1a;
+    color: #ccc;
+    // display: flex;
+    // flex-direction:column;
+    .SideNav-top{
+    //    flex: 1;
+       .SideNav-top-profile{
+          display:flex;
+        //   align-items: center;
+        //   justify-content: center;
+          padding: 15px;
+          .profile-icon{
+             background: #f8cbad;
+             width: 30px;
+             height: 30px;
+             border-radius: 50%;
+             color: #000;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+            }
+             .profile-title{
+                display: flex;
+                align-items: center; 
+                // flex: 1;
+                margin-left: 10px;
+                .icon{
+                    margin: 0 10px;
+                    font-size: 12px;
+                }
+            }
+       }
+       .SideNav-top-search{
+          padding: 15px;
+          .search-box{
+            display: flex;
+            align-items: center;
+            background: #404040;
+            padding: 8px 10px;
+            border-radius: 50px;
+            .icon{
+               font-size: 12px;
+            }
+            input{
+                color: #fff;
+                margin-left: 10px;
+                background:none;
+                outline: none;
+                border: none;
+            }
+          }
+
+       }
+       .SideNav-top-createnote{
+           padding: 0 15px;
+           color: #fff;
+           .createnote-btn{
+                display: flex;
+                align-items: center;
+                background: #03a82d;
+                padding: 8px 10px;
+                border-radius: 50px;
+                cursor: pointer;
+
+           }
+                .icon{
+                    font-size: 12px;
+                }
+                .title{
+                    margin-left: 10px;
+                }
+           
+       }
+       .SideNav-top-menu-item{
+        margin-top: 10px;
+        ul{
+            li{
+                display:flex;
+                align-items:center;
+                padding: 10px 18px;
+                color: #ccc;
+                text-decoration: none;
+                .icon{
+                    font-size: 14px;
+                    margin-right:8px;
+                }
+                &:hover{
+                    cursor:pointer;
+                    background: #404040;
+                }
+                &:active{
+                    background:#404040 ;
+                }
+            }
+        }
+        
+       }
+    }
+}

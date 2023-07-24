@@ -1,0 +1,78 @@
+.Notes-List{
+height:100%;
+width:300px;
+max-width: 670px;
+min-width: 196px;
+background: #f8f8f8;
+border-style: 1px solid #e6e6e6;
+// display:flex;
+// flex-direction: column;
+    .Notes-List-header{
+        padding: 5px 25px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ccc;
+        .title{
+            width: 100%;
+            flex: 1;
+            h1{
+                margin: 15px 0 20px;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+        .sub-title{
+        width: 100%;
+        margin: 5px;
+        font-size: 14px; 
+        }
+    }
+    .Notes-List-body{
+    //    flex: 1;
+    overflow: auto; 
+    .card{
+        height: 120px;
+        padding: 20px 25px;
+        box-sizing: border-box;
+        // display: flex;
+        // flex-direction: column;
+        border: 1px solid #e6e6e6;
+        // text-decoration: none;
+        .card-head{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex: 1;
+            font-size: 14px;   
+            .card-title{
+                width: 100%;
+                color: #333;
+                font-weight: 600;
+                white-space: nowrap;
+                overflow: hidden; 
+                text-overflow: ellipsis;
+                padding-bottom: 20px;
+                }
+            .card-desc{
+                width: 100%;
+                color: #737373;
+                margin-top: 5px;
+                white-space: nowrap;
+                overflow: hidden; 
+                text-overflow: ellipsis;
+            }    
+            }
+            &:hover{
+                 cursor: pointer;
+                 background: #fff;  
+            }
+            &:active{
+                background: #fff;  
+           }
+        }
+    }
+}
